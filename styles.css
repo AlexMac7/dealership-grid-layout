@@ -48,6 +48,16 @@ body {
 }
 
 /* Hero */
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+.filter {
+
+}
+.results {
+
+}
 
 /* Footer */
 .footer {
