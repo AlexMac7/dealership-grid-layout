@@ -1,5 +1,5 @@
 :root {
-    --font-size: 10px;
+    --font-size: 20px;
     --dark-text: hsl(0, 0%, 13%);
     --grey-text: hsl(0, 0%, 29%);
     --light-grey-text: hsl(0, 0%, 45%);
@@ -22,4 +22,27 @@ body {
     border-top: solid 0.25rem var(--highlight-color);
     margin: 0;
     padding: 0;
+}
+
+/* Header */
+.header {
+    text-align: center;
+}
+
+/* Navigation Bar */
+.navBar {
+    perspective: 600px;
+}
+.navBar__menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.navBar__item {
+    display: flex;
+}
+.navBar__link {
+    color: var(--light-grey-text);
+    text-decoration: none;
 }
