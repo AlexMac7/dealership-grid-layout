@@ -1,5 +1,5 @@
 :root {
-    --font-size: 20px;
+    --font-size: 10px;
     --dark-text: hsl(0, 0%, 13%);
     --grey-text: hsl(0, 0%, 29%);
     --light-grey-text: hsl(0, 0%, 45%);
@@ -51,12 +51,18 @@ body {
 .hero {
     display: grid;
     grid-template-columns: 2fr 3fr;
+    min-height: 50vh;
+    margin-top: 1rem;
 }
-.filter {
-
+.filters {
+    border: solid 2px red; /* todo remove */
+}
+.filters__item {
+    border: solid 1px green; /* todo remove */
+    margin: 1rem;
 }
 .results {
-
+    border: solid 2px red; /* todo remove */
 }
 
 /* Footer */
@@ -64,6 +70,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
+    font-size: 2rem;
 }
 .footer__column {
     text-align: left;
