@@ -38,14 +38,62 @@
 
     <section class="hero">
         <div class="filters">
-            <div class="filters__item search">Search by keyword</div>
-            <div class="filters__item condition">Toggle all, new or used</div>
-            <div class="filters__item year">Checkboxes to multi select years</div>
-            <div class="filters__item make">Checkboxes to multi select makes</div>
-            <div class="filters__item bodyStyle">Checkboxes to multi select body styles. SUV, Minivan etc.</div>
-            <div class="filters__item mileage">Input fields to choose a kilometer range</div>
-            <div class="filters__item price">Input fields to choose a price range</div>
-            <div class="filters__item exteriorColor">Check boxes to multi select exterior colors</div>
+            <div class="filters__block">
+                <h3 class="filters__title">Search By Keyword</h3>
+                <input class="filters__search" type="text" placeholder="Search Inventory" name="search" />
+            </div>
+            <div class="filters__block">
+                <h3 class="filters__title">Condition</h3>
+                <ul class="filters__list">
+                    <li class="filters__item"><input class="filters__condition" type="checkbox" name="all">All</input></li>
+                    <li class="filters__item"><input class="filters__condition" type="checkbox" name="new">New</input></li>
+                    <li class="filters__item"><input class="filters__condition" type="checkbox" name="used">Used</input></li>
+                </ul>
+            </div>
+            <div class="filters__block year">
+                <h3 class="filters__title">Year</h3>
+                <ul class="filters__list">
+                    <li class="filters__item"><input class="filters__year" type="checkbox" name="2018">2018</input></li>
+                    <li class="filters__item"><input class="filters__year" type="checkbox" name="2017">2017</input></li>
+                    <li class="filters__item"><input class="filters__year" type="checkbox" name="2016">2016</input></li>
+                </ul>
+            </div>
+            <div class="filters__block make">
+                <h3 class="filters__title">Make</h3>
+                <ul class="filters__list">
+                    <li class="filters__item"><input class="filters__make" type="checkbox" name="ford">Ford</input></li>
+                    <li class="filters__item"><input class="filters__make" type="checkbox" name="hyundai">Hyundai</input></li>
+                    <li class="filters__item"><input class="filters__make" type="checkbox" name="jeep">Jeep</input></li>
+                </ul>
+            </div>
+            <div class="filters__block bodyStyle">
+                <h3 class="filters__title">Body Style</h3>
+                <ul class="filters__list">
+                    <li class="filters__item"><input class="filters__bodyStyle" type="checkbox" name="suv">SUV</input></li>
+                    <li class="filters__item"><input class="filters__bodyStyle" type="checkbox" name="sedan">Sedan</input></li>
+                    <li class="filters__item"><input class="filters__bodyStyle" type="checkbox" name="Truck">Truck</input></li>
+                </ul>
+            </div>
+            <div class="filters__block maxKilometers">
+                <h3 class="filters__title">Max Kilometers</h3>
+                <input class="filters__maxKilometers" type="text" placeholder="Max Kilometers" name="max-kilometers" />
+            </div>
+            <div class="filters__block minPrice">
+                <h3 class="filters__title">Max Price</h3>
+                <input class="filters__maxPrice" type="text" placeholder="Max Price" name="max-Price" />
+            </div>
+            <div class="filters__block minPrice">
+                <h3 class="filters__title">Min Price</h3>
+                <input class="filters__minPrice" type="text" placeholder="Min Price" name="min-Price" />
+            </div>
+            <div class="filters__block exteriorColor">
+                <h3 class="filters__title">Exterior Color</h3>
+                <ul class="filters__list">
+                    <li class="filters__item"><input class="filters__exteriorColor" type="checkbox" name="black">Black</input></li>
+                    <li class="filters__item"><input class="filters__exteriorColor" type="checkbox" name="blue">Blue</input></li>
+                    <li class="filters__item"><input class="filters__exteriorColor" type="checkbox" name="Red">Truck</input></li>
+                </ul>
+            </div>
         </div>
         <div class="results">
             Results go here
@@ -56,7 +104,7 @@
         <div class="footer__column">
             <h2 class="footer__title">About</h2>
             <p class="footer__about">
-                Located in Maple Ridge, British Columbia, DriveTime Motors (previously MJ Auto Wholesale) is a pre-owned, late model auto dealer that provides customers with a comfortable automotive purchasing experience at competitive prices.
+                Located in XYZ, State, Motorway Speedways is a decent dealer that provides customers with an ok automotive purchasing experience at pretty high prices.
             </p>
         </div>
         <div class="footer__column">

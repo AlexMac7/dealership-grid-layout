@@ -57,9 +57,34 @@ body {
 .filters {
     border: solid 2px red; /* todo remove */
 }
-.filters__item {
+.filters__block {
     border: solid 1px green; /* todo remove */
-    margin: 1rem;
+    margin: .5rem;
+    font-size: 1.5rem;
+}
+.filters__title {
+    margin: .5rem 0;
+    font-weight: var(--heavy-font-weight);
+    color: var(--grey-text)
+}
+.filters__search {
+    font-weight: var(--normal-font-weight);
+    line-height: 2rem;
+    width: 80%;
+}
+.filters__list {
+    padding: 0;
+    margin: 0;
+}
+.filters__item {
+    list-style: none;
+    font-weight: var(--normal-font-weight);
+    color: var(--light-grey-text);
+}
+.filters__maxKilometers {
+    font-weight: var(--normal-font-weight);
+    line-height: 2rem;
+    width: 80%;
 }
 .results {
     border: solid 2px red; /* todo remove */
