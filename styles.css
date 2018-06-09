@@ -125,3 +125,14 @@ body {
     color: var(--grey-text);
     text-decoration: none;
 }
+
+/* Media Queries */
+@media (max-width: 425px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
+}
