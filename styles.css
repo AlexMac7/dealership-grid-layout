@@ -27,6 +27,7 @@ body {
 /* Header */
 .header {
     text-align: center;
+    font-size: 3rem;
 }
 
 /* Navigation Bar */
@@ -38,6 +39,7 @@ body {
     justify-content: space-between;
     margin: 0;
     padding: 0;
+    font-size: 2rem;
 }
 .navBar__item {
     display: flex;
@@ -88,7 +90,7 @@ body {
     width: 80%;
 }
 .results {
-    border: solid 2px red; /* todo remove */
+    /*border: solid 2px red; !* todo remove *!*/
 }
 .results__block {
     border: solid 1px green; /* todo remove */
