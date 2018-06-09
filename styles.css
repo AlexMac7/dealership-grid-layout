@@ -90,15 +90,16 @@ body {
     width: 80%;
 }
 .results {
-    /*border: solid 2px red; !* todo remove *!*/
+    border: solid 2px red; /* todo remove */
 }
 .results__block {
     border: solid 1px green; /* todo remove */
     margin: .5rem;
     font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-.results__title {
-    margin: .5rem 0;
+.results__info {
     font-weight: var(--heavy-font-weight);
     color: var(--grey-text)
 }
@@ -106,6 +107,21 @@ body {
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+.results__title {
+    grid-area: results__title;
+    font-weight: var(--heavy-font-weight);
+    color: var(--grey-text)
+}
+.results__specs {
+    grid-area: results__specs;
+    font-weight: var(--heavy-font-weight);
+    color: var(--grey-text)
+}
+.results__price {
+    grid-area: results__price;
+    font-weight: var(--heavy-font-weight);
+    color: var(--grey-text)
 }
 
 /* Footer */
