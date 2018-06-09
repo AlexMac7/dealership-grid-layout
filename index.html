@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link href="styles.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
     <title>Dealership</title>
 </head>
@@ -16,7 +17,11 @@
     <section class="header">
         <h1 class="header__title">Motorway Speedway</h1>
     </section>
+
     <nav class="navBar">
+        <li class="navBar__toggle">
+            <i class="fas fa-bars"></i>
+        </li>
         <ul class="navBar__menu">
             <li class="navBar__item">
                 <a class="navBar__link" href="#">Home</a>
@@ -169,3 +174,13 @@
         </div>
     </footer>
 </html>
+
+<script>
+    function classToggle() {
+        const navs = document.querySelectorAll('.navBar__menu')
+
+        navs.forEach(nav => nav.classList.toggle('navBar__toggleShow'));
+    }
+    document.querySelector('.navBar__toggle')
+        .addEventListener('click', classToggle);
+</script>
