@@ -20,7 +20,7 @@
 
     <nav class="navBar">
         <li class="navBar__toggle">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars">Navigation</i>
         </li>
         <ul class="navBar__menu">
             <li class="navBar__item">
@@ -43,9 +43,12 @@
 
     <section class="hero">
         <div class="filters">
+            <li class="filters__toggle">
+                <i class="fas fa-filter">Filters</i>
+            </li>
             <div class="filters__block">
                 <h3 class="filters__title">Search By Keyword</h3>
-                <input class="filters__search" type="text" placeholder="Search Inventory" name="search" />
+                <input class="filters__search filters--textInput" type="text" placeholder="Search Inventory" name="search" />
             </div>
             <div class="filters__block">
                 <h3 class="filters__title">Condition</h3>
@@ -81,15 +84,15 @@
             </div>
             <div class="filters__block maxKilometers">
                 <h3 class="filters__title">Max Kilometers</h3>
-                <input class="filters__maxKilometers" type="text" placeholder="Max Kilometers" name="max-kilometers" />
+                <input class="filters__maxKilometers filters--textInput" type="text" placeholder="Max Kilometers" name="max-kilometers" />
             </div>
             <div class="filters__block minPrice">
                 <h3 class="filters__title">Max Price</h3>
-                <input class="filters__maxPrice" type="text" placeholder="Max Price" name="max-Price" />
+                <input class="filters__maxPrice filters--textInput" type="text" placeholder="Max Price" name="max-Price" />
             </div>
             <div class="filters__block minPrice">
                 <h3 class="filters__title">Min Price</h3>
-                <input class="filters__minPrice" type="text" placeholder="Min Price" name="min-Price" />
+                <input class="filters__minPrice filters--textInput" type="text" placeholder="Min Price" name="min-Price" />
             </div>
             <div class="filters__block exteriorColor">
                 <h3 class="filters__title">Exterior Color</h3>
@@ -159,7 +162,7 @@
         <div class="footer__column">
             <h2 class="footer__title">About</h2>
             <p class="footer__about">
-                Located in XYZ, State, Motorway Speedways is a decent dealer that provides customers with an ok automotive purchasing experience at pretty high prices.
+                Located in XYZ, State, Motorway Speedways is a dealer that provides customers with an unparalleled automotive purchasing experience at competitive prices.
             </p>
         </div>
         <div class="footer__column">
@@ -212,11 +215,19 @@
 </html>
 
 <script>
-    function classToggle() {
+    function classToggleNav() {
         const navs = document.querySelectorAll('.navBar__menu')
 
-        navs.forEach(nav => nav.classList.toggle('navBar__toggleShow'));
+        navs.forEach(nav => nav.classList.toggle('navBar__toggle--show'));
     }
     document.querySelector('.navBar__toggle')
-        .addEventListener('click', classToggle);
+        .addEventListener('click', classToggleNav);
+
+    function classToggleFilters() {
+        const filters = document.querySelectorAll('.filters__block')
+
+        filters.forEach(filter => filter.classList.toggle('filters__toggle--show'));
+    }
+    document.querySelector('.filters__toggle')
+        .addEventListener('click', classToggleFilters);
 </script>

@@ -36,8 +36,9 @@ body {
 .navBar__toggle {
     display: none;
 }
-.fa-bars {
-    font-size: 3rem;
+.fas { /* Font Awesome Icons */
+    font-size: 2.5rem;
+    color: var(--grey-text);
 }
 .navBar__menu {
     display: flex;
@@ -63,11 +64,13 @@ body {
     max-width: 100vw;
     margin-top: 1rem;
 }
-/*todo, toggle filters on mobile like nav bar */
 .filters {
 }
+.filters__toggle {
+    display: none;
+    margin: .5rem;
+}
 .filters__block {
-    border: solid 1px #7FDEFF; /* todo remove */
     margin: .5rem;
     font-size: 1.5rem;
 }
@@ -77,9 +80,6 @@ body {
     color: var(--grey-text);
 }
 .filters__search {
-    font-weight: var(--normal-font-weight);
-    line-height: 2rem;
-    width: 80%;
 }
 .filters__list {
     padding: 0;
@@ -91,19 +91,18 @@ body {
     color: var(--light-grey-text);
 }
 .filters__maxKilometers {
-    font-weight: var(--normal-font-weight);
-    line-height: 2rem;
-    width: 80%;
 }
 .filters__maxPrice {
-    font-weight: var(--normal-font-weight);
-    line-height: 2rem;
-    width: 80%;
 }
 .filters__minPrice {
-    font-weight: var(--normal-font-weight);
-    line-height: 2rem;
-    width: 80%;
+}
+.filters--textInput {
+    line-height: 2.5rem;
+    width: 99%;
+    border: none;
+    border-radius: .25rem;
+    box-shadow: inset 0 1px 1px 0 hsla(0, 0%, 0%, .08);
+    background-color: hsl(220, 12%, 95%);
 }
 .resultsContainer {
 }
@@ -196,7 +195,7 @@ body {
     .navBar__menu {
         display:none;
     }
-    .navBar__toggleShow {
+    .navBar__toggle--show {
         display: flex;
     }
     .navBar__toggle {
@@ -206,6 +205,16 @@ body {
     }
     .hero {
         grid-template-columns: 1fr;
+    }
+    .filters__block {
+        display:none;
+    }
+    .filters__toggle--show {
+        display: block;
+    }
+    .filters__toggle {
+        display: initial;
+        cursor: pointer;
     }
     .footer {
         grid-template-columns: 1fr;
